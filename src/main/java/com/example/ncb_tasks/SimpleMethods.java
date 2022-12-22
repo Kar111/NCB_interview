@@ -1,4 +1,4 @@
-package com.example.ncb_tasks.Countries;
+package com.example.ncb_tasks;
 
 import java.util.stream.IntStream;
 
