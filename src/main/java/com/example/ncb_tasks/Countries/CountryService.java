@@ -25,8 +25,7 @@ public class CountryService {
                 new ParameterizedTypeReference<List<CountryDTO>>() {} ).getBody();
 
         Map<List<String>, List<CountryDTO>> grouped_countries = response.stream()
-                .filter(c -> c.getLanguages() != null)
-                .filter(c -> c.getLanguages().size() > 1)
+                .filter(c -> (c.getLanguages() != null && c.getLanguages().size() > 1))
                 .collect(Collectors.groupingBy(CountryDTO::getContinents));
 
         Map<List<String>, List<CountryDTO>> result = grouped_countries.entrySet().stream().
