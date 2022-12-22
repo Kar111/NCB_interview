@@ -1,3 +1,5 @@
+package com.example.ncb_tasks.Countries;
+
 import java.util.stream.IntStream;
 
 public class SimpleMethods {

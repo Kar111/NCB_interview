@@ -1,3 +1,4 @@
+import com.example.ncb_tasks.Countries.SimpleMethods;
 import org.junit.Before;
 import org.junit.Test;
 
